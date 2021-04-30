@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If else</title>
+</head>
+<body>
+    <script>
+        
+        let age = prompt('введите, пожалуйста, Ваш возраст');
+
+        let lastDigit = age[age.length - 1]; 
+
+            if (Number(age) !== Number (age)) {
+
+                alert('ввод возраста только числовым значением!');
+
+            } else if (age < 0) {
+
+                alert('отрицательные числа недопустимы!')
+
+            } else if (  lastDigit == 0 || age[age.length - 2] == 1  || (lastDigit >= 5 && lastDigit <= 9)) {
+
+                alert( age + ' лет');
+
+            } else if (lastDigit == 1) {
+
+                alert( age + ' год');
+
+            } else if (lastDigit >= 2 && lastDigit <= 4) {
+
+                alert( age + ' годa');
+
+            }    
+
+    </script>
+</body>
+</html>
